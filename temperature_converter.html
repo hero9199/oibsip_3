@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Converter</title>
+  <style>
+    /* Add some basic styling to center the elements */
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+    }
+
+    #container {
+      text-align: center;
+    }
+     /* Add a CSS class to customize the button color */
+     .custom-button {
+      background-color: #4CAF50;
+      color: white;
+     }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <h2>Temperature Converter</h2>
+    <input type="text" id="temperatureInput" placeholder="Enter temperature" required>
+    <br><br>
+    <label>
+      <input type="radio" name="unit" value="Celsius" checked> Celsius
+    </label>
+    <label>
+      <input type="radio" name="unit" value="Fahrenheit"> Fahrenheit
+    </label>
+    <label>
+      <input type="radio" name="unit" value="Kelvin"> Kelvin
+    </label>
+    <br><br>
+    <button onclick="convertTemperature()">Convert</button>
+    <br><br>
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
